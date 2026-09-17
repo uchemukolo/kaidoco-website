@@ -6,7 +6,7 @@ const clients = [
   { i: 'SV', n: 'SIVOOK' },
   { i: 'SP', n: 'SwissPay' },
   { i: 'NC', n: 'NeuroCare' },
-  { i: 'US', n: 'Uni-Scholar' },
+  { i: 'AS', n: 'After Sxtn' },
   { i: 'TK', n: 'Tracklo' },
   { i: 'RB', n: 'R&B Plumbing' },
   { i: 'GE', n: 'Global Express' },
@@ -17,12 +17,13 @@ const marqueeClients = [...clients, ...clients];
 const services = [
   { no: '01', name: 'Web Design & Development', desc: 'Beautiful, fast websites built to convert visitors into customers — from a single landing page to a full site.' },
   { no: '02', name: 'App Development', desc: 'Custom web and mobile apps that turn your idea into a product people actually use.' },
-  { no: '03', name: 'SEO & Copywriting', desc: 'Search-ready words that get you found — and read like a human wrote them, because one did.' },
-  { no: '04', name: 'Quality Assurance', desc: 'Rigorous testing so what you launch works everywhere, for everyone, every time.' },
+  { no: '03', name: 'Prototyping', desc: 'Clickable prototypes for founders validating an idea, testing demand, and pitching with confidence before committing to full build costs.' },
+  { no: '04', name: 'SEO & Copywriting', desc: 'Search-ready words that get you found — and read like a human wrote them, because one did.' },
+  { no: '05', name: 'Quality Assurance', desc: 'Rigorous testing so what you launch works everywhere, for everyone, every time.' },
 ];
 
 const work = [
-  { name: 'Invoice Manager', status: 'Live', tags: ['SaaS'], url: 'https://app.kaidoco.com/', image: '/assets/invoice-manager.png' },
+  { name: 'The Vill Collective', status: 'Live', tags: ['Website', 'Community'], url: 'https://www.thevillcollective.org/', image: '/assets/the-vill-collective.svg' },
   { name: 'After Sxtn', status: 'Live', tags: ['Consumer app'], url: 'https://www.aftersxtn.com/', image: '/assets/AfterSxtn.png' },
   { name: 'SIVOOK', status: 'Completed', tags: ['Website', 'SEO'], url: 'https://www.sivook.co.uk/', image: '/assets/sivook.png' },
   { name: 'SwissPay Africa', status: 'Completed', tags: ['Website', 'SEO'], url: 'https://www.swisspay.africa/', image: '/assets/swisspay.png' },
@@ -32,7 +33,6 @@ const work = [
 
 const products = [
   { name: 'After Sxtn', category: 'In-house · Consumer app', desc: 'A product we designed, built and launched entirely in-house — the clearest proof of what the studio can do end to end.', cta: 'Explore After Sxtn', stage: 'Live', image: '/assets/in-house-aftersxtn.png' },
-  { name: 'Invoice Manager', category: 'In-house · SaaS', desc: 'Simple invoicing and billing software for small businesses — send, track and get paid without the spreadsheet chaos.', cta: 'Explore Invoice Manager', stage: 'Live', image: '/assets/in-house-invoice-manager.png' },
 ];
 
 const tiers = [
@@ -123,12 +123,12 @@ const docHtml = `
           <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:6px">Projects delivered</div>
         </div>
         <div>
-          <div style="font-size:clamp(28px,3.5vw,40px);font-weight:700;letter-spacing:-0.02em">2</div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:6px">In-house products</div>
+          <div style="font-size:clamp(28px,3.5vw,40px);font-weight:700;letter-spacing:-0.02em">1</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:6px">In-house product</div>
         </div>
         <div>
-          <div style="font-size:clamp(28px,3.5vw,40px);font-weight:700;letter-spacing:-0.02em">4</div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:6px">Web · App · SEO · QA</div>
+          <div style="font-size:clamp(28px,3.5vw,40px);font-weight:700;letter-spacing:-0.02em">5</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-top:6px">Web · App · Prototype · SEO · QA</div>
         </div>
       </div>
     </section>
@@ -165,10 +165,9 @@ const docHtml = `
         <div style="border:1px solid var(--line);border-radius:20px;padding:clamp(28px,3.5vw,44px);background:var(--ink);color:var(--bg);display:flex;flex-direction:column">
           <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:18px">◆ Our products</div>
           <h3 style="margin:0 0 14px;font-size:clamp(22px,2.6vw,30px);letter-spacing:-0.02em;font-weight:700">When we spot a gap, we build it.</h3>
-          <p style="margin:0 0 24px;font-size:16px;line-height:1.55;opacity:0.72">After Sxtn and Invoice Manager are made with the exact standard we bring to your work — proof we practise what we ship.</p>
+          <p style="margin:0 0 24px;font-size:16px;line-height:1.55;opacity:0.72">After Sxtn is made with the exact standard we bring to your work — proof we practise what we ship.</p>
           <div style="margin-top:auto;display:flex;flex-wrap:wrap;gap:8px">
             <span style="font-size:13px;padding:7px 13px;border:1px solid rgba(244,240,233,0.22);border-radius:999px">After Sxtn</span>
-            <span style="font-size:13px;padding:7px 13px;border:1px solid rgba(244,240,233,0.22);border-radius:999px">Invoice Manager</span>
           </div>
         </div>
       </div>
@@ -228,8 +227,8 @@ const docHtml = `
     <section id="products" style="background:var(--prod-bg);color:var(--prod-ink)">
       <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,9vw,120px) 24px">
         <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:22px">Built by Kaido Co</div>
-        <h2 style="margin:0 0 16px;font-size:clamp(30px,4.6vw,56px);line-height:1.05;letter-spacing:-0.025em;font-weight:700;max-width:18ch">Products we made — and stand behind.</h2>
-        <p style="margin:0 0 clamp(44px,5vw,64px);font-size:clamp(17px,2vw,20px);line-height:1.5;color:var(--prod-muted);max-width:52ch">The same team, the same craft. Two products born in-house at the studio.</p>
+        <h2 style="margin:0 0 16px;font-size:clamp(30px,4.6vw,56px);line-height:1.05;letter-spacing:-0.025em;font-weight:700;max-width:18ch">Product we made — and stand behind.</h2>
+        <p style="margin:0 0 clamp(44px,5vw,64px);font-size:clamp(17px,2vw,20px);line-height:1.5;color:var(--prod-muted);max-width:52ch">The same team, the same craft. One product born in-house at the studio.</p>
         <div style="display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
           ${products.map((p) => `
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(24px,3vw,48px);align-items:center;border:1px solid var(--prod-line);border-radius:24px;padding:clamp(24px,3vw,44px);background:color-mix(in srgb,var(--prod-ink) 4%,transparent)">
@@ -398,7 +397,6 @@ const docHtml = `
             <div style="display:flex;flex-direction:column;gap:12px">
               <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:2px">Products</div>
               <a href="#products" style="text-decoration:none;font-size:15px">After Sxtn</a>
-              <a href="#products" style="text-decoration:none;font-size:15px">Invoice Manager</a>
             </div>
           </div>
         </div>
