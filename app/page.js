@@ -23,7 +23,7 @@ const services = [
 ];
 
 const work = [
-  { name: 'The Vill Collective', status: 'Live', tags: ['Website', 'Community'], url: 'https://www.thevillcollective.org/', image: '/assets/the-vill-collective.svg' },
+  { name: 'The Vill Collective', status: 'Live', tags: ['Website', 'Community'], url: 'https://www.thevillcollective.org/', image: '/assets/the-vill-collective.png' },
   { name: 'After Sxtn', status: 'Live', tags: ['Consumer app'], url: 'https://www.aftersxtn.com/', image: '/assets/AfterSxtn.png' },
   { name: 'SIVOOK', status: 'Completed', tags: ['Website', 'SEO'], url: 'https://www.sivook.co.uk/', image: '/assets/sivook.png' },
   { name: 'SwissPay Africa', status: 'Completed', tags: ['Website', 'SEO'], url: 'https://www.swisspay.africa/', image: '/assets/swisspay.png' },
